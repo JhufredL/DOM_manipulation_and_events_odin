@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The JavaScript Drum Kit!</title>
+  <link href="style.css" rel="stylesheet" type="text/css" /> <!-- Note below, this is where I linked the style.css file.-->
+
+
+</head>
+
+<body>
+  <h1>
+    The JavaScript Drum Kit / Music Player!
+
+  </h1>
+  <h4>Using your keyboard, press on the key to play the sound below it! Try it out!</h4>
+
+  <p align="center">
+
+
+
+    <audio id="note1">
+      <source src="sounds/note1.mp3" /> </audio>
+    <audio id="note2">
+      <source src="sounds/note1.mp3" /> </audio>
+    <audio id="note3">
+      <source src="sounds/note1.mp3" /> </audio>
+    <audio id="note4">
+      <source src="sounds/note1.mp3" /> </audio>
+    <audio id="note5">
+      <source src="sounds/note1.mp3" /> </audio>
+    <audio id="note6">
+      <source src="sounds/note1.mp3" /> </audio>
+    <audio id="note7">
+      <source src="sounds/note1.mp3" /> </audio>
+    <audio id="note8">
+      <source src="sounds/note1.mp3" /> </audio>
+
+
+    <button id="buttonA" onclick="tryThis(sound1)">A<br> Note 1 </button>
+    <button id="buttonS" onclick="tryThis(sound1)">S<br> Note 2 </button>
+    <button id="buttonD" onclick="tryThis(sound1)">D<br> Note 3 </button>
+    <button id="buttonF" onclick="tryThis(sound1)">F<br> Note 4 </button>
+    <button id="buttonH" onclick="tryThis(sound1)">H<br> Note 5 </button>
+    <button id="buttonJ" onclick="tryThis(sound1)">J<br> Note 6 </button>
+    <button id="buttonK" onclick="tryThis(sound1)">K<br> Note 7 </button>
+    <button id="buttonL" onclick="tryThis(sound1)">L<br> Note 8 </button>
+  </p>
+
+
+  <script>
+    var sound1 = new Audio();
+    var sound2 = new Audio();
+    var sound3 = new Audio();
+    var sound4 = new Audio();
+    var sound5 = new Audio();
+    var sound6 = new Audio();
+    var sound7 = new Audio();
+    var sound8 = new Audio();
+
+    sound1.src = "sounds/note1.mp3";
+    sound2.src = "sounds/note2.mp3"
+    sound3.src = "sounds/note3.mp3"
+    sound4.src = "sounds/note4.mp3"
+    sound5.src = "sounds/note5.mp3"
+    sound6.src = "sounds/note6.mp3"
+    sound7.src = "sounds/note7.mp3"
+    sound8.src = "sounds/note8.mp3"
+
+    function tryThis(aSound) {
+      aSound.play();
+    }
+  </script>
+
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
